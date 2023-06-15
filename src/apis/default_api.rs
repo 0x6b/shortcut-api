@@ -5176,7 +5176,7 @@ pub async fn update_task(configuration: &configuration::Configuration, story_pub
 }
 
 /// Upload Files uploads one or many files and optionally associates them with a story.    Use the multipart/form-data content-type to upload.    Each `file` key should contain a separate file.    Each UploadedFile's name comes from the Content-Disposition header \"filename\" directive for that field.
-pub async fn upload_files(configuration: &configuration::Configuration, file0: std::path::PathBuf, story_id: Option<i64>, file1: Option<std::path::PathBuf>, file2: Option<std::path::PathBuf>, file3: Option<std::path::PathBuf>) -> Result<Vec<crate::models::UploadedFile>, Error<UploadFilesError>> {
+pub async fn upload_files(configuration: &configuration::Configuration, _file0: std::path::PathBuf, story_id: Option<i64>, _file1: Option<std::path::PathBuf>, _file2: Option<std::path::PathBuf>, _file3: Option<std::path::PathBuf>) -> Result<Vec<crate::models::UploadedFile>, Error<UploadFilesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
