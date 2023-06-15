@@ -1,10 +1,9 @@
 [package]
 name = "shortcut-api"
 version = "0.1.0"
-authors = ["OpenAPI Generator team and contributors"]
-description = "Shortcut API"
-# Override this license by providing a License Object in the OpenAPI.
-license = "Unlicense"
+authors = ["0x6b"]
+description = "The API client for Shortcut REST API V3"
+license = "MIT"
 edition = "2021"
 
 [dependencies]
