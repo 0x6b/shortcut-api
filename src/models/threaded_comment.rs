@@ -10,8 +10,6 @@
 
 /// ThreadedComment : Comments associated with Epic Discussions.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ThreadedComment {
     /// The Shortcut application url for the Comment.
@@ -41,7 +39,8 @@ pub struct ThreadedComment {
     /// An array of Group IDs that have been mentioned in this Comment.
     #[serde(rename = "group_mention_ids")]
     pub group_mention_ids: Vec<uuid::Uuid>,
-    /// This field can be set to another unique ID. In the case that the Comment has been imported from another tool, the ID in the other tool can be indicated here.
+    /// This field can be set to another unique ID. In the case that the Comment has been imported
+    /// from another tool, the ID in the other tool can be indicated here.
     #[serde(rename = "external_id", deserialize_with = "Option::deserialize")]
     pub external_id: Option<String>,
     /// The unique ID of the Comment.
@@ -57,7 +56,21 @@ pub struct ThreadedComment {
 
 impl ThreadedComment {
     /// Comments associated with Epic Discussions.
-    pub fn new(app_url: String, entity_type: String, deleted: bool, mention_ids: Vec<uuid::Uuid>, author_id: uuid::Uuid, member_mention_ids: Vec<uuid::Uuid>, comments: Vec<ThreadedComment>, updated_at: String, group_mention_ids: Vec<uuid::Uuid>, external_id: Option<String>, id: i64, created_at: String, text: String) -> ThreadedComment {
+    pub fn new(
+        app_url: String,
+        entity_type: String,
+        deleted: bool,
+        mention_ids: Vec<uuid::Uuid>,
+        author_id: uuid::Uuid,
+        member_mention_ids: Vec<uuid::Uuid>,
+        comments: Vec<ThreadedComment>,
+        updated_at: String,
+        group_mention_ids: Vec<uuid::Uuid>,
+        external_id: Option<String>,
+        id: i64,
+        created_at: String,
+        text: String,
+    ) -> ThreadedComment {
         ThreadedComment {
             app_url,
             entity_type,
@@ -75,5 +88,3 @@ impl ThreadedComment {
         }
     }
 }
-
-
