@@ -1,3 +1,5 @@
+#![allow(clippy::too_many_arguments)] // as its auto generated code`
+
 pub mod basic_workspace_info;
 pub use self::basic_workspace_info::BasicWorkspaceInfo;
 pub mod branch;
