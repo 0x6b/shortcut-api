@@ -41,7 +41,7 @@ pub struct EpicSlim {
     /// An array containing Group IDs and Group-owned story counts for the Epic's associated
     /// groups.
     #[serde(rename = "associated_groups")]
-    pub associated_groups: Vec<crate::models::EpicAssociatedGroup>,
+    pub associated_groups: Option<Vec<crate::models::EpicAssociatedGroup>>,
     /// The IDs of Projects related to this Epic.
     #[serde(rename = "project_ids")]
     pub project_ids: Vec<i64>,
@@ -197,7 +197,7 @@ impl EpicSlim {
             labels,
             mention_ids,
             member_mention_ids,
-            associated_groups,
+            associated_groups: Some(associated_groups),
             project_ids,
             stories_without_projects,
             completed_at_override,
