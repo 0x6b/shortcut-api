@@ -16,6 +16,7 @@ See [examples/simple.rs](examples/simple.rs) for usage i.e.
 ```shell
 $ export SHORTCUT_API_TOKEN=...
 $ cargo run --example simple
+$ cargo run --example search
 ```
 
 ## Issues
