@@ -17,7 +17,7 @@ pub struct PullRequestLabel {
     pub entity_type: String,
     /// The unique ID of the VCS Label.
     #[serde(rename = "id")]
-    pub id: i64,
+    pub id: String,
     /// The color of the VCS label.
     #[serde(rename = "color")]
     pub color: String,
@@ -36,7 +36,7 @@ pub struct PullRequestLabel {
 
 impl PullRequestLabel {
     /// Corresponds to a VCS Label associated with a Pull Request.
-    pub fn new(entity_type: String, id: i64, color: String, name: String) -> PullRequestLabel {
+    pub fn new(entity_type: String, id: String, color: String, name: String) -> PullRequestLabel {
         PullRequestLabel {
             entity_type,
             id,
