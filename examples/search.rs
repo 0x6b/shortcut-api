@@ -1,13 +1,14 @@
 use std::{env, error::Error};
 
-use shortcut_api::apis::default_api::get_epic;
 use shortcut_api::{
     apis::{
         configuration::{ApiKey, Configuration},
         default_api::{list_milestone_epics, search_epics, search_milestones, search_stories},
     },
-    models::search::{Detail, EntityTypes},
-    models::Search,
+    models::{
+        search::{Detail, EntityTypes},
+        Search,
+    },
 };
 
 #[tokio::main]
