@@ -11,12 +11,14 @@ shortcut_api = { git = "https://github.com/0x6b/shortcut-api" }
 
 ## Usage
 
-See [examples/simple.rs](examples/simple.rs) for usage i.e.
+See [examples/](examples) directory for usage i.e.
 
 ```shell
 $ export SHORTCUT_API_TOKEN=...
 $ cargo run --example simple
 $ cargo run --example search
+$ cargo run --example epic-metrics
+$ cargo run --example pagination
 ```
 
 ## Issues
