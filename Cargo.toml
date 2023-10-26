@@ -1,6 +1,6 @@
 [package]
 name = "shortcut-api"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["0x6b"]
 description = "The API client for Shortcut REST API V3"
 license = "MIT"
