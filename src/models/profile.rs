@@ -37,7 +37,7 @@ pub struct Profile {
     #[serde(rename = "id")]
     pub id: uuid::Uuid,
     #[serde(rename = "display_icon")]
-    pub display_icon: Box<crate::models::Icon>,
+    pub display_icon: Option<Box<crate::models::Icon>>,
     /// A boolean indicating whether this profile is an owner at their associated organization.
     #[serde(rename = "is_owner")]
     pub is_owner: bool,
@@ -67,7 +67,7 @@ impl Profile {
             name,
             gravatar_hash,
             id,
-            display_icon: Box::new(display_icon),
+            display_icon: Some(Box::new(display_icon)),
             is_owner,
             email_address,
         }
