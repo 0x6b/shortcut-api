@@ -17,8 +17,6 @@ pub struct GetMember {
 
 impl GetMember {
     pub fn new() -> GetMember {
-        GetMember {
-            org_public_id: None,
-        }
+        GetMember { org_public_id: None }
     }
 }

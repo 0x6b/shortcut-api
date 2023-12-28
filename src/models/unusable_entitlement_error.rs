@@ -27,11 +27,7 @@ impl UnusableEntitlementError {
         entitlement_tag: String,
         message: String,
     ) -> UnusableEntitlementError {
-        UnusableEntitlementError {
-            reason_tag,
-            entitlement_tag,
-            message,
-        }
+        UnusableEntitlementError { reason_tag, entitlement_tag, message }
     }
 }
 

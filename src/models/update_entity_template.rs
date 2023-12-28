@@ -24,9 +24,6 @@ impl UpdateEntityTemplate {
     /// Request parameters for changing either a template's name or any of   the attributes it is
     /// designed to pre-populate.
     pub fn new() -> UpdateEntityTemplate {
-        UpdateEntityTemplate {
-            name: None,
-            story_contents: None,
-        }
+        UpdateEntityTemplate { name: None, story_contents: None }
     }
 }

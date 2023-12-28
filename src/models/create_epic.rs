@@ -17,10 +17,7 @@ pub struct CreateEpic {
     #[serde(rename = "labels", skip_serializing_if = "Option::is_none")]
     pub labels: Option<Vec<crate::models::CreateLabelParams>>,
     /// A manual override for the time/date the Epic was completed.
-    #[serde(
-        rename = "completed_at_override",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "completed_at_override", skip_serializing_if = "Option::is_none")]
     pub completed_at_override: Option<String>,
     /// The Epic's name.
     #[serde(rename = "name")]
@@ -52,10 +49,7 @@ pub struct CreateEpic {
     #[serde(rename = "epic_state_id", skip_serializing_if = "Option::is_none")]
     pub epic_state_id: Option<i64>,
     /// A manual override for the time/date the Epic was started.
-    #[serde(
-        rename = "started_at_override",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "started_at_override", skip_serializing_if = "Option::is_none")]
     pub started_at_override: Option<String>,
     /// The ID of the group to associate with the epic.
     #[serde(

@@ -46,26 +46,17 @@ pub struct HistoryChangesStory {
     pub group_id: Option<Box<crate::models::StoryHistoryChangeOldNewUuid>>,
     #[serde(rename = "workflow_state_id", skip_serializing_if = "Option::is_none")]
     pub workflow_state_id: Option<Box<crate::models::StoryHistoryChangeOldNewInt>>,
-    #[serde(
-        rename = "object_story_link_ids",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "object_story_link_ids", skip_serializing_if = "Option::is_none")]
     pub object_story_link_ids: Option<Box<crate::models::StoryHistoryChangeAddsRemovesInt>>,
     #[serde(rename = "follower_ids", skip_serializing_if = "Option::is_none")]
     pub follower_ids: Option<Box<crate::models::StoryHistoryChangeAddsRemovesUuid>>,
     #[serde(rename = "owner_ids", skip_serializing_if = "Option::is_none")]
     pub owner_ids: Option<Box<crate::models::StoryHistoryChangeAddsRemovesUuid>>,
-    #[serde(
-        rename = "custom_field_value_ids",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "custom_field_value_ids", skip_serializing_if = "Option::is_none")]
     pub custom_field_value_ids: Option<Box<crate::models::StoryHistoryChangeAddsRemovesUuid>>,
     #[serde(rename = "estimate", skip_serializing_if = "Option::is_none")]
     pub estimate: Option<Box<crate::models::StoryHistoryChangeOldNewInt>>,
-    #[serde(
-        rename = "subject_story_link_ids",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "subject_story_link_ids", skip_serializing_if = "Option::is_none")]
     pub subject_story_link_ids: Option<Box<crate::models::StoryHistoryChangeAddsRemovesInt>>,
     #[serde(rename = "blocked", skip_serializing_if = "Option::is_none")]
     pub blocked: Option<Box<crate::models::StoryHistoryChangeOldNewBool>>,

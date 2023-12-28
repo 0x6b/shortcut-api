@@ -28,10 +28,6 @@ pub struct UpdateCategory {
 
 impl UpdateCategory {
     pub fn new() -> UpdateCategory {
-        UpdateCategory {
-            name: None,
-            color: None,
-            archived: None,
-        }
+        UpdateCategory { name: None, color: None, archived: None }
     }
 }

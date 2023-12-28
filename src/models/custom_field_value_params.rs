@@ -23,10 +23,6 @@ pub struct CustomFieldValueParams {
 
 impl CustomFieldValueParams {
     pub fn new(field_id: uuid::Uuid, value_id: uuid::Uuid) -> CustomFieldValueParams {
-        CustomFieldValueParams {
-            field_id,
-            value_id,
-            value: None,
-        }
+        CustomFieldValueParams { field_id, value_id, value: None }
     }
 }

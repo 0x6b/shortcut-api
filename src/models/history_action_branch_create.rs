@@ -38,13 +38,7 @@ impl HistoryActionBranchCreate {
         url: String,
         action: Action,
     ) -> HistoryActionBranchCreate {
-        HistoryActionBranchCreate {
-            id,
-            entity_type,
-            name,
-            url,
-            action,
-        }
+        HistoryActionBranchCreate { id, entity_type, name, url, action }
     }
 }
 

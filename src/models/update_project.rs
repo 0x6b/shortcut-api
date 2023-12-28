@@ -17,10 +17,7 @@ pub struct UpdateProject {
     #[serde(rename = "archived", skip_serializing_if = "Option::is_none")]
     pub archived: Option<bool>,
     /// The number of days before the thermometer appears in the Story summary.
-    #[serde(
-        rename = "days_to_thermometer",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "days_to_thermometer", skip_serializing_if = "Option::is_none")]
     pub days_to_thermometer: Option<i64>,
     /// The color that represents the Project in the UI.
     #[serde(rename = "color", skip_serializing_if = "Option::is_none")]

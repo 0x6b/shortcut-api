@@ -37,10 +37,7 @@ pub struct HistoryReferenceCustomFieldEnumValue {
     #[serde(rename = "string_value", deserialize_with = "Option::deserialize")]
     pub string_value: Option<String>,
     /// Whether or not the custom-field enum value is enabled.
-    #[serde(
-        rename = "enum_value_enabled",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "enum_value_enabled", deserialize_with = "Option::deserialize")]
     pub enum_value_enabled: Option<bool>,
 }
 

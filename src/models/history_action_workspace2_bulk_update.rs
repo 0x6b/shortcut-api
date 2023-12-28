@@ -34,12 +34,7 @@ impl HistoryActionWorkspace2BulkUpdate {
         action: Action,
         name: String,
     ) -> HistoryActionWorkspace2BulkUpdate {
-        HistoryActionWorkspace2BulkUpdate {
-            id,
-            entity_type,
-            action,
-            name,
-        }
+        HistoryActionWorkspace2BulkUpdate { id, entity_type, action, name }
     }
 }
 

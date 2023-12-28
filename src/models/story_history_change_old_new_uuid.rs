@@ -23,9 +23,6 @@ pub struct StoryHistoryChangeOldNewUuid {
 impl StoryHistoryChangeOldNewUuid {
     /// The Team ID for the Story.
     pub fn new() -> StoryHistoryChangeOldNewUuid {
-        StoryHistoryChangeOldNewUuid {
-            old: None,
-            new: None,
-        }
+        StoryHistoryChangeOldNewUuid { old: None, new: None }
     }
 }

@@ -26,10 +26,6 @@ pub struct Identity {
 impl Identity {
     /// The Identity of the VCS user that authored the Commit.
     pub fn new(entity_type: String, name: Option<String>, r#type: Option<String>) -> Identity {
-        Identity {
-            entity_type,
-            name,
-            r#type,
-        }
+        Identity { entity_type, name, r#type }
     }
 }

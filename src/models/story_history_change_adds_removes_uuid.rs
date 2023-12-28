@@ -24,9 +24,6 @@ pub struct StoryHistoryChangeAddsRemovesUuid {
 impl StoryHistoryChangeAddsRemovesUuid {
     /// Custom Field Enum Value IDs that have been added or removed from the Story.
     pub fn new() -> StoryHistoryChangeAddsRemovesUuid {
-        StoryHistoryChangeAddsRemovesUuid {
-            adds: None,
-            removes: None,
-        }
+        StoryHistoryChangeAddsRemovesUuid { adds: None, removes: None }
     }
 }

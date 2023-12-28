@@ -28,9 +28,6 @@ pub struct StoryHistoryChangeOldNewStr {
 impl StoryHistoryChangeOldNewStr {
     /// A timestamp that represents the Story's deadline.
     pub fn new() -> StoryHistoryChangeOldNewStr {
-        StoryHistoryChangeOldNewStr {
-            old: None,
-            new: None,
-        }
+        StoryHistoryChangeOldNewStr { old: None, new: None }
     }
 }

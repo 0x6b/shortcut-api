@@ -14,10 +14,7 @@ pub struct CustomField {
     #[serde(rename = "description", skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     /// A string that represents the icon that corresponds to this custom field.
-    #[serde(
-        rename = "icon_set_identifier",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "icon_set_identifier", skip_serializing_if = "Option::is_none")]
     pub icon_set_identifier: Option<String>,
     /// A string description of this resource.
     #[serde(rename = "entity_type")]

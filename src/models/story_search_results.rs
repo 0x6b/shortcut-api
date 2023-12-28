@@ -33,11 +33,6 @@ impl StorySearchResults {
         data: Vec<crate::models::StorySearchResult>,
         next: Option<String>,
     ) -> StorySearchResults {
-        StorySearchResults {
-            total,
-            data,
-            next,
-            cursors: None,
-        }
+        StorySearchResults { total, data, next, cursors: None }
     }
 }

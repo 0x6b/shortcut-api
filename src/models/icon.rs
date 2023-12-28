@@ -40,12 +40,6 @@ impl Icon {
         updated_at: String,
         url: String,
     ) -> Icon {
-        Icon {
-            entity_type,
-            id,
-            created_at,
-            updated_at,
-            url,
-        }
+        Icon { entity_type, id, created_at, updated_at, url }
     }
 }

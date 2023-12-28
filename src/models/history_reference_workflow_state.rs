@@ -34,12 +34,7 @@ impl HistoryReferenceWorkflowState {
         r#type: RHashType,
         name: String,
     ) -> HistoryReferenceWorkflowState {
-        HistoryReferenceWorkflowState {
-            id,
-            entity_type,
-            r#type,
-            name,
-        }
+        HistoryReferenceWorkflowState { id, entity_type, r#type, name }
     }
 }
 

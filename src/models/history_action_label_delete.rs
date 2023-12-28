@@ -34,12 +34,7 @@ impl HistoryActionLabelDelete {
         action: Action,
         name: String,
     ) -> HistoryActionLabelDelete {
-        HistoryActionLabelDelete {
-            id,
-            entity_type,
-            action,
-            name,
-        }
+        HistoryActionLabelDelete { id, entity_type, action, name }
     }
 }
 

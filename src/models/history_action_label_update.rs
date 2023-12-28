@@ -26,11 +26,7 @@ pub struct HistoryActionLabelUpdate {
 impl HistoryActionLabelUpdate {
     /// An action representing a Label being updated.
     pub fn new(id: i64, entity_type: String, action: Action) -> HistoryActionLabelUpdate {
-        HistoryActionLabelUpdate {
-            id,
-            entity_type,
-            action,
-        }
+        HistoryActionLabelUpdate { id, entity_type, action }
     }
 }
 

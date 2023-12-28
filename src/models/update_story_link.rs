@@ -23,11 +23,7 @@ pub struct UpdateStoryLink {
 
 impl UpdateStoryLink {
     pub fn new() -> UpdateStoryLink {
-        UpdateStoryLink {
-            verb: None,
-            subject_id: None,
-            object_id: None,
-        }
+        UpdateStoryLink { verb: None, subject_id: None, object_id: None }
     }
 }
 

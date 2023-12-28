@@ -23,9 +23,6 @@ pub struct StoryReaction {
 impl StoryReaction {
     /// Emoji reaction on a comment.
     pub fn new(emoji: String, permission_ids: Vec<uuid::Uuid>) -> StoryReaction {
-        StoryReaction {
-            emoji,
-            permission_ids,
-        }
+        StoryReaction { emoji, permission_ids }
     }
 }

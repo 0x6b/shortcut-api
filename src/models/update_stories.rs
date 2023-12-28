@@ -38,10 +38,7 @@ pub struct UpdateStories {
     #[serde(rename = "external_links", skip_serializing_if = "Option::is_none")]
     pub external_links: Option<Vec<String>>,
     /// The UUIDs of the followers to be removed.
-    #[serde(
-        rename = "follower_ids_remove",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "follower_ids_remove", skip_serializing_if = "Option::is_none")]
     pub follower_ids_remove: Option<Vec<uuid::Uuid>>,
     /// The ID of the member that requested the story.
     #[serde(rename = "requested_by_id", skip_serializing_if = "Option::is_none")]
@@ -56,10 +53,7 @@ pub struct UpdateStories {
     pub iteration_id: Option<Option<i64>>,
     /// A map specifying a CustomField ID and CustomFieldEnumValue ID that represents an assertion
     /// of some value for a CustomField.
-    #[serde(
-        rename = "custom_fields_remove",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "custom_fields_remove", skip_serializing_if = "Option::is_none")]
     pub custom_fields_remove: Option<Vec<crate::models::CustomFieldValueParams>>,
     /// An array of labels to be added.
     #[serde(rename = "labels_add", skip_serializing_if = "Option::is_none")]

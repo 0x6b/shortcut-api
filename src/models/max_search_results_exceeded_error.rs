@@ -31,11 +31,7 @@ impl MaxSearchResultsExceededError {
         message: String,
         maximum_results: MaximumResults,
     ) -> MaxSearchResultsExceededError {
-        MaxSearchResultsExceededError {
-            error,
-            message,
-            maximum_results,
-        }
+        MaxSearchResultsExceededError { error, message, maximum_results }
     }
 }
 

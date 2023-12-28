@@ -34,11 +34,6 @@ impl HistoryReferenceProject {
         app_url: String,
         name: String,
     ) -> HistoryReferenceProject {
-        HistoryReferenceProject {
-            id,
-            entity_type,
-            app_url,
-            name,
-        }
+        HistoryReferenceProject { id, entity_type, app_url, name }
     }
 }

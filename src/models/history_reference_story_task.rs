@@ -30,10 +30,6 @@ impl HistoryReferenceStoryTask {
         entity_type: String,
         description: String,
     ) -> HistoryReferenceStoryTask {
-        HistoryReferenceStoryTask {
-            id,
-            entity_type,
-            description,
-        }
+        HistoryReferenceStoryTask { id, entity_type, description }
     }
 }

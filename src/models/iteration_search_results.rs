@@ -33,11 +33,6 @@ impl IterationSearchResults {
         data: Vec<crate::models::IterationSlim>,
         next: Option<String>,
     ) -> IterationSearchResults {
-        IterationSearchResults {
-            total,
-            data,
-            next,
-            cursors: None,
-        }
+        IterationSearchResults { total, data, next, cursors: None }
     }
 }

@@ -28,12 +28,7 @@ pub struct CreateCategory {
 
 impl CreateCategory {
     pub fn new(name: String, r#type: RHashType) -> CreateCategory {
-        CreateCategory {
-            name,
-            color: None,
-            external_id: None,
-            r#type,
-        }
+        CreateCategory { name, color: None, external_id: None, r#type }
     }
 }
 

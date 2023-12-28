@@ -26,10 +26,6 @@ pub struct HistoryReferenceGroup {
 impl HistoryReferenceGroup {
     /// A reference to a Group.
     pub fn new(id: uuid::Uuid, entity_type: String, name: String) -> HistoryReferenceGroup {
-        HistoryReferenceGroup {
-            id,
-            entity_type,
-            name,
-        }
+        HistoryReferenceGroup { id, entity_type, name }
     }
 }

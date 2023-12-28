@@ -19,10 +19,7 @@ pub struct Profile {
     #[serde(rename = "deactivated")]
     pub deactivated: bool,
     /// If Two Factor Authentication is activated for this User.
-    #[serde(
-        rename = "two_factor_auth_activated",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "two_factor_auth_activated", skip_serializing_if = "Option::is_none")]
     pub two_factor_auth_activated: Option<bool>,
     /// The Member's username within the Organization.
     #[serde(rename = "mention_name")]

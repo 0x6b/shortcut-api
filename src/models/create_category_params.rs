@@ -27,10 +27,6 @@ pub struct CreateCategoryParams {
 impl CreateCategoryParams {
     /// Request parameters for creating a Category with a Milestone.
     pub fn new(name: String) -> CreateCategoryParams {
-        CreateCategoryParams {
-            name,
-            color: None,
-            external_id: None,
-        }
+        CreateCategoryParams { name, color: None, external_id: None }
     }
 }

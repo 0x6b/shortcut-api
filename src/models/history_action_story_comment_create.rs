@@ -42,14 +42,7 @@ impl HistoryActionStoryCommentCreate {
         text: String,
         author_id: uuid::Uuid,
     ) -> HistoryActionStoryCommentCreate {
-        HistoryActionStoryCommentCreate {
-            id,
-            entity_type,
-            action,
-            app_url,
-            text,
-            author_id,
-        }
+        HistoryActionStoryCommentCreate { id, entity_type, action, app_url, text, author_id }
     }
 }
 

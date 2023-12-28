@@ -26,10 +26,6 @@ pub struct ProjectStats {
 impl ProjectStats {
     /// A group of calculated values for this Project.
     pub fn new(num_stories: i64, num_points: i64, num_related_documents: i64) -> ProjectStats {
-        ProjectStats {
-            num_stories,
-            num_points,
-            num_related_documents,
-        }
+        ProjectStats { num_stories, num_points, num_related_documents }
     }
 }

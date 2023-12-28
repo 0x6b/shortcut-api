@@ -34,11 +34,6 @@ impl HistoryReferenceLabel {
         app_url: String,
         name: String,
     ) -> HistoryReferenceLabel {
-        HistoryReferenceLabel {
-            id,
-            entity_type,
-            app_url,
-            name,
-        }
+        HistoryReferenceLabel { id, entity_type, app_url, name }
     }
 }

@@ -34,11 +34,6 @@ impl HistoryReferenceIteration {
         app_url: String,
         name: String,
     ) -> HistoryReferenceIteration {
-        HistoryReferenceIteration {
-            id,
-            entity_type,
-            app_url,
-            name,
-        }
+        HistoryReferenceIteration { id, entity_type, app_url, name }
     }
 }

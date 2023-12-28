@@ -63,10 +63,7 @@ pub struct HistoryActionStoryCreate {
     #[serde(rename = "workflow_state_id", skip_serializing_if = "Option::is_none")]
     pub workflow_state_id: Option<i64>,
     /// An array of Story IDs that are the object of a Story Link relationship.
-    #[serde(
-        rename = "object_story_link_ids",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "object_story_link_ids", skip_serializing_if = "Option::is_none")]
     pub object_story_link_ids: Option<Vec<i64>>,
     /// An array of Member IDs for the followers of the Story.
     #[serde(rename = "follower_ids", skip_serializing_if = "Option::is_none")]
@@ -75,10 +72,7 @@ pub struct HistoryActionStoryCreate {
     #[serde(rename = "owner_ids", skip_serializing_if = "Option::is_none")]
     pub owner_ids: Option<Vec<uuid::Uuid>>,
     /// An array of Custom Field Enum Value ids on this Story.
-    #[serde(
-        rename = "custom_field_value_ids",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "custom_field_value_ids", skip_serializing_if = "Option::is_none")]
     pub custom_field_value_ids: Option<Vec<uuid::Uuid>>,
     /// The ID of the entity referenced.
     #[serde(rename = "id")]
@@ -87,10 +81,7 @@ pub struct HistoryActionStoryCreate {
     #[serde(rename = "estimate", skip_serializing_if = "Option::is_none")]
     pub estimate: Option<i64>,
     /// An array of Story IDs that are the subject of a Story Link relationship.
-    #[serde(
-        rename = "subject_story_link_ids",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "subject_story_link_ids", skip_serializing_if = "Option::is_none")]
     pub subject_story_link_ids: Option<Vec<i64>>,
     /// The action of the entity referenced.
     #[serde(rename = "action")]

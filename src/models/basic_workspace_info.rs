@@ -18,9 +18,6 @@ pub struct BasicWorkspaceInfo {
 
 impl BasicWorkspaceInfo {
     pub fn new(url_slug: String, estimate_scale: Vec<i64>) -> BasicWorkspaceInfo {
-        BasicWorkspaceInfo {
-            url_slug,
-            estimate_scale,
-        }
+        BasicWorkspaceInfo { url_slug, estimate_scale }
     }
 }

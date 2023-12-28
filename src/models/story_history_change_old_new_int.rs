@@ -23,9 +23,6 @@ pub struct StoryHistoryChangeOldNewInt {
 impl StoryHistoryChangeOldNewInt {
     /// The estimate value for the Story
     pub fn new() -> StoryHistoryChangeOldNewInt {
-        StoryHistoryChangeOldNewInt {
-            old: None,
-            new: None,
-        }
+        StoryHistoryChangeOldNewInt { old: None, new: None }
     }
 }

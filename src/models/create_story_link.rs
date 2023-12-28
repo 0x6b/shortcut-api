@@ -23,11 +23,7 @@ pub struct CreateStoryLink {
 
 impl CreateStoryLink {
     pub fn new(verb: Verb, subject_id: i64, object_id: i64) -> CreateStoryLink {
-        CreateStoryLink {
-            verb,
-            subject_id,
-            object_id,
-        }
+        CreateStoryLink { verb, subject_id, object_id }
     }
 }
 

@@ -55,10 +55,7 @@ pub struct Story {
     #[serde(rename = "workflow_id")]
     pub workflow_id: i64,
     /// A manual override for the time/date the Story was completed.
-    #[serde(
-        rename = "completed_at_override",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "completed_at_override", deserialize_with = "Option::deserialize")]
     pub completed_at_override: Option<String>,
     /// The time/date the Story was started.
     #[serde(rename = "started_at", deserialize_with = "Option::deserialize")]
@@ -87,10 +84,7 @@ pub struct Story {
     #[serde(rename = "epic_id", deserialize_with = "Option::deserialize")]
     pub epic_id: Option<i64>,
     /// The IDs of any unresolved blocker comments on the Story.
-    #[serde(
-        rename = "unresolved_blocker_comments",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "unresolved_blocker_comments", skip_serializing_if = "Option::is_none")]
     pub unresolved_blocker_comments: Option<Vec<i64>>,
     /// The ID of the story template used to create this story, or null if not created using a
     /// template.
@@ -115,10 +109,7 @@ pub struct Story {
     #[serde(rename = "label_ids")]
     pub label_ids: Vec<i64>,
     /// A manual override for the time/date the Story was started.
-    #[serde(
-        rename = "started_at_override",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "started_at_override", deserialize_with = "Option::deserialize")]
     pub started_at_override: Option<String>,
     /// The ID of the group associated with the story.
     #[serde(rename = "group_id", deserialize_with = "Option::deserialize")]

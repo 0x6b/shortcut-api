@@ -23,9 +23,6 @@ pub struct StoryHistoryChangeOldNewBool {
 impl StoryHistoryChangeOldNewBool {
     /// True if the Story has archived, otherwise false.
     pub fn new() -> StoryHistoryChangeOldNewBool {
-        StoryHistoryChangeOldNewBool {
-            old: None,
-            new: None,
-        }
+        StoryHistoryChangeOldNewBool { old: None, new: None }
     }
 }

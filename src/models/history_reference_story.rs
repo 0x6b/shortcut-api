@@ -38,13 +38,7 @@ impl HistoryReferenceStory {
         name: String,
         story_type: StoryType,
     ) -> HistoryReferenceStory {
-        HistoryReferenceStory {
-            id,
-            entity_type,
-            app_url,
-            name,
-            story_type,
-        }
+        HistoryReferenceStory { id, entity_type, app_url, name, story_type }
     }
 }
 

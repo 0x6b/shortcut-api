@@ -23,9 +23,6 @@ pub struct StoryHistoryChangeAddsRemovesInt {
 impl StoryHistoryChangeAddsRemovesInt {
     /// Task IDs that have been added or removed from the Story.
     pub fn new() -> StoryHistoryChangeAddsRemovesInt {
-        StoryHistoryChangeAddsRemovesInt {
-            adds: None,
-            removes: None,
-        }
+        StoryHistoryChangeAddsRemovesInt { adds: None, removes: None }
     }
 }

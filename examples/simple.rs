@@ -11,24 +11,16 @@ use shortcut_api::{
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     let config = Configuration {
-        api_key: Some(ApiKey {
-            key: env::var("SHORTCUT_API_TOKEN")?,
-            prefix: None,
-        }),
+        api_key: Some(ApiKey { key: env::var("SHORTCUT_API_TOKEN")?, prefix: None }),
         ..Configuration::default()
     };
 
     let epic = get_epic(&config, 14798).await?;
     println!("Epic {}: {}", epic.id, epic.name);
 
-    let stories = list_epic_stories(
-        &config,
-        epic.id,
-        GetEpicStories {
-            includes_description: Some(true),
-        },
-    )
-    .await?;
+    let stories =
+        list_epic_stories(&config, epic.id, GetEpicStories { includes_description: Some(true) })
+            .await?;
     for story in stories {
         println!("Story {}: {}", story.id, story.name);
         if let Some(id) = story.owner_ids.first() {

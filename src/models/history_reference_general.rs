@@ -30,10 +30,6 @@ impl HistoryReferenceGeneral {
         entity_type: String,
         name: String,
     ) -> HistoryReferenceGeneral {
-        HistoryReferenceGeneral {
-            id,
-            entity_type,
-            name,
-        }
+        HistoryReferenceGeneral { id, entity_type, name }
     }
 }

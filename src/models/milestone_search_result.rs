@@ -29,10 +29,7 @@ pub struct MilestoneSearchResult {
     #[serde(rename = "entity_type")]
     pub entity_type: String,
     /// A manual override for the time/date the Milestone was completed.
-    #[serde(
-        rename = "completed_at_override",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "completed_at_override", deserialize_with = "Option::deserialize")]
     pub completed_at_override: Option<String>,
     /// The time/date the Milestone was started.
     #[serde(rename = "started_at", deserialize_with = "Option::deserialize")]
@@ -52,10 +49,7 @@ pub struct MilestoneSearchResult {
     #[serde(rename = "state")]
     pub state: String,
     /// A manual override for the time/date the Milestone was started.
-    #[serde(
-        rename = "started_at_override",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "started_at_override", deserialize_with = "Option::deserialize")]
     pub started_at_override: Option<String>,
     /// The time/date the Milestone was updated.
     #[serde(rename = "updated_at")]

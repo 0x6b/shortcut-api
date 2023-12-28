@@ -34,11 +34,6 @@ impl HistoryReferenceCommit {
         message: String,
         url: String,
     ) -> HistoryReferenceCommit {
-        HistoryReferenceCommit {
-            id,
-            entity_type,
-            message,
-            url,
-        }
+        HistoryReferenceCommit { id, entity_type, message, url }
     }
 }

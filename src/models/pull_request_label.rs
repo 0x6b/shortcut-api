@@ -37,12 +37,6 @@ pub struct PullRequestLabel {
 impl PullRequestLabel {
     /// Corresponds to a VCS Label associated with a Pull Request.
     pub fn new(entity_type: String, id: String, color: String, name: String) -> PullRequestLabel {
-        PullRequestLabel {
-            entity_type,
-            id,
-            color,
-            description: None,
-            name,
-        }
+        PullRequestLabel { entity_type, id, color, description: None, name }
     }
 }

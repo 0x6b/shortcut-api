@@ -14,18 +14,12 @@ pub struct EpicAssociatedGroup {
     #[serde(rename = "group_id")]
     pub group_id: uuid::Uuid,
     /// The number of stories this Group owns in the Epic.
-    #[serde(
-        rename = "associated_stories_count",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "associated_stories_count", skip_serializing_if = "Option::is_none")]
     pub associated_stories_count: Option<i64>,
 }
 
 impl EpicAssociatedGroup {
     pub fn new(group_id: uuid::Uuid) -> EpicAssociatedGroup {
-        EpicAssociatedGroup {
-            group_id,
-            associated_stories_count: None,
-        }
+        EpicAssociatedGroup { group_id, associated_stories_count: None }
     }
 }
