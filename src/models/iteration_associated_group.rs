@@ -14,18 +14,12 @@ pub struct IterationAssociatedGroup {
     #[serde(rename = "group_id")]
     pub group_id: uuid::Uuid,
     /// The number of stories this Group owns in the Iteration.
-    #[serde(
-        rename = "associated_stories_count",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "associated_stories_count", skip_serializing_if = "Option::is_none")]
     pub associated_stories_count: Option<i64>,
 }
 
 impl IterationAssociatedGroup {
     pub fn new(group_id: uuid::Uuid) -> IterationAssociatedGroup {
-        IterationAssociatedGroup {
-            group_id,
-            associated_stories_count: None,
-        }
+        IterationAssociatedGroup { group_id, associated_stories_count: None }
     }
 }

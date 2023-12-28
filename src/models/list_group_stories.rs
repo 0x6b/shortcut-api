@@ -20,9 +20,6 @@ pub struct ListGroupStories {
 
 impl ListGroupStories {
     pub fn new() -> ListGroupStories {
-        ListGroupStories {
-            limit: None,
-            offset: None,
-        }
+        ListGroupStories { limit: None, offset: None }
     }
 }

@@ -38,13 +38,7 @@ impl HistoryActionProjectUpdate {
         app_url: String,
         name: String,
     ) -> HistoryActionProjectUpdate {
-        HistoryActionProjectUpdate {
-            id,
-            entity_type,
-            action,
-            app_url,
-            name,
-        }
+        HistoryActionProjectUpdate { id, entity_type, action, app_url, name }
     }
 }
 

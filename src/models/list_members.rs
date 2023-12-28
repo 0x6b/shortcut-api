@@ -17,8 +17,6 @@ pub struct ListMembers {
 
 impl ListMembers {
     pub fn new() -> ListMembers {
-        ListMembers {
-            org_public_id: None,
-        }
+        ListMembers { org_public_id: None }
     }
 }

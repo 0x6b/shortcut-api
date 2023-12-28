@@ -38,13 +38,7 @@ impl HistoryActionBranchMerge {
         url: String,
         action: Action,
     ) -> HistoryActionBranchMerge {
-        HistoryActionBranchMerge {
-            id,
-            entity_type,
-            name,
-            url,
-            action,
-        }
+        HistoryActionBranchMerge { id, entity_type, name, url, action }
     }
 }
 

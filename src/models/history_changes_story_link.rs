@@ -23,10 +23,6 @@ pub struct HistoryChangesStoryLink {
 impl HistoryChangesStoryLink {
     /// The changes that have occurred as a result of the action.
     pub fn new() -> HistoryChangesStoryLink {
-        HistoryChangesStoryLink {
-            verb: None,
-            object_id: None,
-            subject_id: None,
-        }
+        HistoryChangesStoryLink { verb: None, object_id: None, subject_id: None }
     }
 }

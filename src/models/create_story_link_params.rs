@@ -27,11 +27,7 @@ pub struct CreateStoryLinkParams {
 impl CreateStoryLinkParams {
     /// Request parameters for creating a Story Link within a Story.
     pub fn new(verb: Verb) -> CreateStoryLinkParams {
-        CreateStoryLinkParams {
-            subject_id: None,
-            verb,
-            object_id: None,
-        }
+        CreateStoryLinkParams { subject_id: None, verb, object_id: None }
     }
 }
 

@@ -33,11 +33,6 @@ impl EpicSearchResults {
         data: Vec<crate::models::EpicSearchResult>,
         next: Option<String>,
     ) -> EpicSearchResults {
-        EpicSearchResults {
-            total,
-            data,
-            next,
-            cursors: None,
-        }
+        EpicSearchResults { total, data, next, cursors: None }
     }
 }

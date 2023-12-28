@@ -37,10 +37,7 @@ pub struct SearchStories {
     #[serde(rename = "completed_at_end", skip_serializing_if = "Option::is_none")]
     pub completed_at_end: Option<String>,
     /// The type of Workflow State the Stories may be in.
-    #[serde(
-        rename = "workflow_state_types",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "workflow_state_types", skip_serializing_if = "Option::is_none")]
     pub workflow_state_types: Option<Vec<WorkflowStateTypes>>,
     /// Stories should have a deadline before this date.
     #[serde(rename = "deadline_end", skip_serializing_if = "Option::is_none")]
@@ -103,10 +100,7 @@ pub struct SearchStories {
     #[serde(rename = "external_id", skip_serializing_if = "Option::is_none")]
     pub external_id: Option<String>,
     /// Whether to include the story description in the response.
-    #[serde(
-        rename = "includes_description",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "includes_description", skip_serializing_if = "Option::is_none")]
     pub includes_description: Option<bool>,
     /// The number of estimate points associate with the Stories.
     #[serde(rename = "estimate", skip_serializing_if = "Option::is_none")]

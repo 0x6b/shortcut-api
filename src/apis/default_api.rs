@@ -1193,10 +1193,8 @@ pub async fn create_entity_template(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/entity-templates",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/entity-templates", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
 
@@ -2836,10 +2834,7 @@ pub async fn disable_groups(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/groups/disable",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str = format!("{}/api/v3/groups/disable", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
 
@@ -2884,10 +2879,8 @@ pub async fn disable_iterations(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/iterations/disable",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/iterations/disable", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
 
@@ -2932,10 +2925,8 @@ pub async fn disable_story_templates(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/entity-templates/disable",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/entity-templates/disable", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
 
@@ -3025,10 +3016,8 @@ pub async fn enable_iterations(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/iterations/enable",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/iterations/enable", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
 
@@ -3073,10 +3062,8 @@ pub async fn enable_story_templates(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/entity-templates/enable",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/entity-templates/enable", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::PUT, local_var_uri_str.as_str());
 
@@ -3462,10 +3449,8 @@ pub async fn get_external_link_stories(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/external-link/stories",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/external-link/stories", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
 
@@ -4349,10 +4334,8 @@ pub async fn list_entity_templates(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/entity-templates",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/entity-templates", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
 
@@ -5461,10 +5444,8 @@ pub async fn search_iterations(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/search/iterations",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/search/iterations", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
 
@@ -5514,10 +5495,8 @@ pub async fn search_milestones(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/search/milestones",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str =
+        format!("{}/api/v3/search/milestones", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
 
@@ -5567,10 +5546,7 @@ pub async fn search_stories(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/search/stories",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str = format!("{}/api/v3/search/stories", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
 
@@ -5617,10 +5593,7 @@ pub async fn search_stories_old(
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!(
-        "{}/api/v3/stories/search",
-        local_var_configuration.base_path
-    );
+    let local_var_uri_str = format!("{}/api/v3/stories/search", local_var_configuration.base_path);
     let mut local_var_req_builder =
         local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
 

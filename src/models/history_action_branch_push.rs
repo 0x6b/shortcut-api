@@ -38,13 +38,7 @@ impl HistoryActionBranchPush {
         url: String,
         action: Action,
     ) -> HistoryActionBranchPush {
-        HistoryActionBranchPush {
-            id,
-            entity_type,
-            name,
-            url,
-            action,
-        }
+        HistoryActionBranchPush { id, entity_type, name, url, action }
     }
 }
 

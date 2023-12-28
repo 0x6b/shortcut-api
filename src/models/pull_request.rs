@@ -29,10 +29,7 @@ pub struct PullRequest {
     pub branch_id: i64,
     /// An array of Story ids that have Pull Requests that change at least one of the same lines
     /// this Pull Request changes.
-    #[serde(
-        rename = "overlapping_stories",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "overlapping_stories", skip_serializing_if = "Option::is_none")]
     pub overlapping_stories: Option<Vec<i64>>,
     /// The pull request's unique number ID in VCS.
     #[serde(rename = "number")]

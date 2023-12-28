@@ -1,7 +1,5 @@
 use std::{env, error::Error};
 
-use url::Url;
-
 use shortcut_api::{
     apis::{
         configuration::{ApiKey, Configuration},
@@ -12,14 +10,12 @@ use shortcut_api::{
         Search,
     },
 };
+use url::Url;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     let config = Configuration {
-        api_key: Some(ApiKey {
-            key: env::var("SHORTCUT_API_TOKEN")?,
-            prefix: None,
-        }),
+        api_key: Some(ApiKey { key: env::var("SHORTCUT_API_TOKEN")?, prefix: None }),
         ..Configuration::default()
     };
 
@@ -65,9 +61,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
         );
     }
 
-    results
-        .iter()
-        .for_each(|e| println!("{}: {}", e.id, e.name));
+    results.iter().for_each(|e| println!("{}: {}", e.id, e.name));
 
     Ok(())
 }

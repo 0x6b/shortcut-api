@@ -34,11 +34,6 @@ impl HistoryReferenceEpic {
         app_url: String,
         name: String,
     ) -> HistoryReferenceEpic {
-        HistoryReferenceEpic {
-            id,
-            entity_type,
-            app_url,
-            name,
-        }
+        HistoryReferenceEpic { id, entity_type, app_url, name }
     }
 }

@@ -20,8 +20,6 @@ pub struct StoryStats {
 impl StoryStats {
     /// The stats object for Stories
     pub fn new(num_related_documents: i64) -> StoryStats {
-        StoryStats {
-            num_related_documents,
-        }
+        StoryStats { num_related_documents }
     }
 }

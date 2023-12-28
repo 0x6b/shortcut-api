@@ -14,10 +14,7 @@ use shortcut_api::{
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     let config = Configuration {
-        api_key: Some(ApiKey {
-            key: env::var("SHORTCUT_API_TOKEN")?,
-            prefix: None,
-        }),
+        api_key: Some(ApiKey { key: env::var("SHORTCUT_API_TOKEN")?, prefix: None }),
         ..Configuration::default()
     };
 
@@ -33,10 +30,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
         },
     )
     .await?;
-    epics
-        .data
-        .iter()
-        .for_each(|e| println!("{}: {}", e.id, e.name));
+    epics.data.iter().for_each(|e| println!("{}: {}", e.id, e.name));
 
     // Search for stories with the word "documentation" in the name
     let stories = search_stories(
@@ -50,10 +44,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
         },
     )
     .await?;
-    stories
-        .data
-        .iter()
-        .for_each(|s| println!("{}: {}", s.id, s.name));
+    stories.data.iter().for_each(|s| println!("{}: {}", s.id, s.name));
 
     // Search for milestones with the word "Jun26-Jun09" in the name
     let milestones = search_milestones(

@@ -23,10 +23,6 @@ pub struct StoryCustomField {
 
 impl StoryCustomField {
     pub fn new(field_id: uuid::Uuid, value_id: uuid::Uuid, value: String) -> StoryCustomField {
-        StoryCustomField {
-            field_id,
-            value_id,
-            value,
-        }
+        StoryCustomField { field_id, value_id, value }
     }
 }

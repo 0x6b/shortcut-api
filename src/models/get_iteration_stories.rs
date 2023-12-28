@@ -11,17 +11,12 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GetIterationStories {
     /// A true/false boolean indicating whether to return Stories with their descriptions.
-    #[serde(
-        rename = "includes_description",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "includes_description", skip_serializing_if = "Option::is_none")]
     pub includes_description: Option<bool>,
 }
 
 impl GetIterationStories {
     pub fn new() -> GetIterationStories {
-        GetIterationStories {
-            includes_description: None,
-        }
+        GetIterationStories { includes_description: None }
     }
 }

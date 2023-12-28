@@ -38,13 +38,7 @@ impl HistoryActionStoryDelete {
         name: String,
         story_type: StoryType,
     ) -> HistoryActionStoryDelete {
-        HistoryActionStoryDelete {
-            id,
-            entity_type,
-            action,
-            name,
-            story_type,
-        }
+        HistoryActionStoryDelete { id, entity_type, action, name, story_type }
     }
 }
 

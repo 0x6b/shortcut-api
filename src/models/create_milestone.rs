@@ -20,16 +20,10 @@ pub struct CreateMilestone {
     #[serde(rename = "state", skip_serializing_if = "Option::is_none")]
     pub state: Option<State>,
     /// A manual override for the time/date the Milestone was started.
-    #[serde(
-        rename = "started_at_override",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "started_at_override", skip_serializing_if = "Option::is_none")]
     pub started_at_override: Option<String>,
     /// A manual override for the time/date the Milestone was completed.
-    #[serde(
-        rename = "completed_at_override",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "completed_at_override", skip_serializing_if = "Option::is_none")]
     pub completed_at_override: Option<String>,
     /// An array of IDs of Categories attached to the Milestone.
     #[serde(rename = "categories", skip_serializing_if = "Option::is_none")]

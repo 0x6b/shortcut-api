@@ -34,12 +34,7 @@ impl HistoryActionTaskDelete {
         action: Action,
         description: String,
     ) -> HistoryActionTaskDelete {
-        HistoryActionTaskDelete {
-            id,
-            entity_type,
-            action,
-            description,
-        }
+        HistoryActionTaskDelete { id, entity_type, action, description }
     }
 }
 

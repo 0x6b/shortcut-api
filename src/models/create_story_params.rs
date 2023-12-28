@@ -39,10 +39,7 @@ pub struct CreateStoryParams {
     #[serde(rename = "file_ids", skip_serializing_if = "Option::is_none")]
     pub file_ids: Option<Vec<i64>>,
     /// A manual override for the time/date the Story was completed.
-    #[serde(
-        rename = "completed_at_override",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "completed_at_override", skip_serializing_if = "Option::is_none")]
     pub completed_at_override: Option<String>,
     /// The name of the story.
     #[serde(rename = "name")]
@@ -86,10 +83,7 @@ pub struct CreateStoryParams {
     #[serde(rename = "tasks", skip_serializing_if = "Option::is_none")]
     pub tasks: Option<Vec<crate::models::CreateTaskParams>>,
     /// A manual override for the time/date the Story was started.
-    #[serde(
-        rename = "started_at_override",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "started_at_override", skip_serializing_if = "Option::is_none")]
     pub started_at_override: Option<String>,
     /// The id of the group to associate with this story.
     #[serde(

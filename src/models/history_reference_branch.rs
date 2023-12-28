@@ -34,11 +34,6 @@ impl HistoryReferenceBranch {
         name: String,
         url: String,
     ) -> HistoryReferenceBranch {
-        HistoryReferenceBranch {
-            id,
-            entity_type,
-            name,
-            url,
-        }
+        HistoryReferenceBranch { id, entity_type, name, url }
     }
 }

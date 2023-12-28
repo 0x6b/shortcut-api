@@ -11,17 +11,12 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListEpics {
     /// A true/false boolean indicating whether to return Epics with their descriptions.
-    #[serde(
-        rename = "includes_description",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "includes_description", skip_serializing_if = "Option::is_none")]
     pub includes_description: Option<bool>,
 }
 
 impl ListEpics {
     pub fn new() -> ListEpics {
-        ListEpics {
-            includes_description: None,
-        }
+        ListEpics { includes_description: None }
     }
 }

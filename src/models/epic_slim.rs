@@ -49,16 +49,10 @@ pub struct EpicSlim {
     #[serde(rename = "stories_without_projects")]
     pub stories_without_projects: i64,
     /// A manual override for the time/date the Epic was completed.
-    #[serde(
-        rename = "completed_at_override",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "completed_at_override", deserialize_with = "Option::deserialize")]
     pub completed_at_override: Option<String>,
     /// The ID of the associated productboard integration.
-    #[serde(
-        rename = "productboard_plugin_id",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "productboard_plugin_id", deserialize_with = "Option::deserialize")]
     pub productboard_plugin_id: Option<uuid::Uuid>,
     /// The time/date the Epic was started.
     #[serde(rename = "started_at", deserialize_with = "Option::deserialize")]
@@ -78,10 +72,7 @@ pub struct EpicSlim {
     #[serde(rename = "productboard_url", deserialize_with = "Option::deserialize")]
     pub productboard_url: Option<String>,
     /// The Epic's planned start date.
-    #[serde(
-        rename = "planned_start_date",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "planned_start_date", deserialize_with = "Option::deserialize")]
     pub planned_start_date: Option<String>,
     /// `Deprecated` The workflow state that the Epic is in.
     #[serde(rename = "state")]
@@ -99,10 +90,7 @@ pub struct EpicSlim {
     #[serde(rename = "label_ids")]
     pub label_ids: Vec<i64>,
     /// A manual override for the time/date the Epic was started.
-    #[serde(
-        rename = "started_at_override",
-        deserialize_with = "Option::deserialize"
-    )]
+    #[serde(rename = "started_at_override", deserialize_with = "Option::deserialize")]
     pub started_at_override: Option<String>,
     #[serde(rename = "group_id", deserialize_with = "Option::deserialize")]
     pub group_id: Option<uuid::Uuid>,

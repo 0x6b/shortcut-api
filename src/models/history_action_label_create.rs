@@ -38,13 +38,7 @@ impl HistoryActionLabelCreate {
         app_url: String,
         name: String,
     ) -> HistoryActionLabelCreate {
-        HistoryActionLabelCreate {
-            id,
-            entity_type,
-            action,
-            app_url,
-            name,
-        }
+        HistoryActionLabelCreate { id, entity_type, action, app_url, name }
     }
 }
 

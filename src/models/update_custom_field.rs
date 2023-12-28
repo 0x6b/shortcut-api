@@ -22,10 +22,7 @@ pub struct UpdateCustomField {
     #[serde(rename = "values", skip_serializing_if = "Option::is_none")]
     pub values: Option<Vec<crate::models::UpdateCustomFieldEnumValue>>,
     /// A frontend-controlled string that represents the icon for this custom field.
-    #[serde(
-        rename = "icon_set_identifier",
-        skip_serializing_if = "Option::is_none"
-    )]
+    #[serde(rename = "icon_set_identifier", skip_serializing_if = "Option::is_none")]
     pub icon_set_identifier: Option<String>,
     /// A description of the purpose of this field.
     #[serde(rename = "description", skip_serializing_if = "Option::is_none")]

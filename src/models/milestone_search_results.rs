@@ -33,11 +33,6 @@ impl MilestoneSearchResults {
         data: Vec<crate::models::MilestoneSearchResult>,
         next: Option<String>,
     ) -> MilestoneSearchResults {
-        MilestoneSearchResults {
-            total,
-            data,
-            next,
-            cursors: None,
-        }
+        MilestoneSearchResults { total, data, next, cursors: None }
     }
 }

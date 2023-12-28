@@ -5,7 +5,6 @@
 use std::{env, error::Error, time::Duration};
 
 use humantime::format_duration;
-
 use shortcut_api::{
     apis::{
         configuration::{ApiKey, Configuration},
@@ -43,10 +42,7 @@ struct Time {
 impl From<Option<i64>> for Time {
     fn from(v: Option<i64>) -> Self {
         match v {
-            None => Self {
-                seconds: -1,
-                formatted: "no data".to_string(),
-            },
+            None => Self { seconds: -1, formatted: "no data".to_string() },
             Some(seconds) => Self {
                 seconds,
                 formatted: format_duration(Duration::new(seconds as u64, 0)).to_string(),
@@ -66,10 +62,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     // Configure the API client with the API key from the SHORTCUT_API_TOKEN environment variable.
     let config = Configuration {
-        api_key: Some(ApiKey {
-            key: env::var("SHORTCUT_API_TOKEN")?,
-            prefix: None,
-        }),
+        api_key: Some(ApiKey { key: env::var("SHORTCUT_API_TOKEN")?, prefix: None }),
         ..Configuration::default()
     };
 

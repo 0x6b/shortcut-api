@@ -42,14 +42,7 @@ impl HistoryActionPullRequest {
         title: String,
         url: String,
     ) -> HistoryActionPullRequest {
-        HistoryActionPullRequest {
-            id,
-            entity_type,
-            action,
-            number,
-            title,
-            url,
-        }
+        HistoryActionPullRequest { id, entity_type, action, number, title, url }
     }
 }
 
