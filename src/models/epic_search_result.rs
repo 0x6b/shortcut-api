@@ -43,7 +43,7 @@ pub struct EpicSearchResult {
     pub associated_groups: Option<Vec<crate::models::EpicAssociatedGroup>>,
     /// The IDs of Projects related to this Epic.
     #[serde(rename = "project_ids")]
-    pub project_ids: Vec<i64>,
+    pub project_ids: Vec<Option<i64>>,
     /// The number of stories in this epic which are not associated with a project.
     #[serde(rename = "stories_without_projects")]
     pub stories_without_projects: i64,
@@ -146,7 +146,7 @@ impl EpicSearchResult {
         mention_ids: Vec<uuid::Uuid>,
         member_mention_ids: Vec<uuid::Uuid>,
         associated_groups: Vec<crate::models::EpicAssociatedGroup>,
-        project_ids: Vec<i64>,
+        project_ids: Vec<Option<i64>>,
         stories_without_projects: i64,
         completed_at_override: Option<String>,
         productboard_plugin_id: Option<uuid::Uuid>,
